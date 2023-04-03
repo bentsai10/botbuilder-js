@@ -2280,6 +2280,7 @@ export enum Channels {
     Msteams = 'msteams',
     Omni = 'omnichannel',
     Outlook = 'outlook',
+    Sharepoint = 'sharepoint',
     Skype = 'skype',
     /**
      * @deprecated This channel is no longer available for bot developers.

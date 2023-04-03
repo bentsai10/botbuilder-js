@@ -63,6 +63,7 @@ export const channels = {
     msteams: 'msteams',
     skype: 'skype',
     skypeforbusiness: 'skypeforbusiness',
+    sharepoint: 'sharepoint',
     slack: 'slack',
     sms: 'sms',
     telegram: 'telegram',
