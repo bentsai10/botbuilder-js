@@ -7,9 +7,13 @@ export enum AceCardSize {
     Large
 }
 
+/**
+ * Sharepoint Ace Data object
+ */
 export class AceData {
+    
     /**
-     * Sharepoint Ace Data object
+     * Initializes a new instance of the AceData class
      */
     public AceData(){
         // Do nothing
@@ -18,70 +22,70 @@ export class AceData {
     /**
      * Sets card size property of type AceCardSize
      */
-    public set CardSize(cardSize: AceCardSize){
-        this.CardSize = cardSize;
+    public set cardSize(cardSize: AceCardSize){
+        this.cardSize = cardSize;
     }
 
     /**
      * Gets card size property of type AceCardSize
      */
-    public get CardSize(): AceCardSize {
-        return this.CardSize;
+    public get cardSize(): AceCardSize {
+        return this.cardSize;
     }
 
     /**
      * Sets data version property of type string
      */
-    public set DataVersion(dataVersion: string){
-        this.DataVersion = dataVersion;
+    public set dataVersion(dataVersion: string){
+        this.dataVersion = dataVersion;
     }
 
     /**
      * Gets data version property of type string
      */
-    public get DataVersion(): string {
-        return this.DataVersion; 
+    public get dataVersion(): string {
+        return this.dataVersion; 
     }
 
     /**
      * Sets id property of type string
      */
-    public set Id(id: string) {
-        this.Id = id;
+    public set id(id: string) {
+        this.id = id;
     }
 
     /**
      * Gets id property of type string
      */
-    public get Id(): string {
-        return this.Id;
+    public get id(): string {
+        return this.id;
     }
 
     /**
      * Sets title property of type string
      */
-    public set Title(title: string){
-        this.Title = title;
+    public set title(title: string){
+        this.title = title;
     }
 
     /**
      * Gets title property of type string
      */
-    public get Title(): string {
-        return this.Title;
+    public get title(): string {
+        return this.title;
     }
 
     /**
      * Sets icon property of type string
      */
-    public set IconProperty(iconProperty: string){
-        this.IconProperty = iconProperty;
+    public set iconProperty(iconProperty: string){
+        this.iconProperty = iconProperty;
     }
 
     /**
      * Gets icon property of type string
      */
-    public get IconProperty(): string{
-        return this.IconProperty;
+    public get iconProperty(): string{
+        return this.iconProperty;
     }
 }

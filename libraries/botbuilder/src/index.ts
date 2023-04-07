@@ -14,6 +14,7 @@ export * from './setSpeakMiddleware';
 export * from './skills';
 export * from './teams';
 export * from './teamsActivityHandler';
+export * from './sharepoint/sharePointActivityHandler';
 export * from './teamsActivityHelpers';
 export * from './teamsInfo';
 

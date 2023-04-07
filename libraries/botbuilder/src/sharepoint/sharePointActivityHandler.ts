@@ -32,22 +32,22 @@ export class SharePointActivityHandler extends ActivityHandler {
             if (!context.activity.name && context.activity.channelId === 'sharepoint') {
                 throw new Error('NotImplemented');
             } else {
-                switch (context.activity.name) {
-                    case 'cardExtension/getCardView':
+                switch (context.activity.value.activity) {
+                    case 'cardView':
                         return ActivityHandler.createInvokeResponse(
                             await this.OnSharePointTaskGetCardViewAsync(context, (context.activity.value as TaskModuleRequest))
                         );
 
-                    case 'cardExtension/getQuickView':
+                    case 'quickView':
                         await this.OnSharePointTaskGetQuickViewAsync(context, (context.activity.value as TaskModuleRequest));
                         return ActivityHandler.createInvokeResponse();
 
-                    case 'cardExtension/getPropertyPaneConfiguration':
+                    case 'propertyPaneConfiguration':
                         return ActivityHandler.createInvokeResponse(
                             await this.OnSharePointTaskGetPropertyPaneConfigurationAsync(context, (context.activity.value as TaskModuleRequest))
                         );
 
-                    case 'cardExtension/setPropertyPaneConfiguration':
+                    case 'setAceProperties':
                         return ActivityHandler.createInvokeResponse(
                             await this.OnSharePointTaskSetPropertyPaneConfigurationAsync(context, (context.activity.value as TaskModuleRequest))
                         );

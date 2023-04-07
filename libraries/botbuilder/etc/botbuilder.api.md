@@ -326,6 +326,15 @@ export class SetSpeakMiddleware implements Middleware {
     onTurn(turnContext: TurnContext, next: () => Promise<void>): Promise<void>;
     }
 
+// @public
+export class SharePointActivityHandler extends ActivityHandler {
+    protected onInvokeActivity(context: TurnContext): Promise<InvokeResponse>;
+    protected OnSharePointTaskGetCardViewAsync(context: TurnContext, taskModuleRequest: TaskModuleRequest): Promise<TaskModuleResponse>;
+    protected OnSharePointTaskGetPropertyPaneConfigurationAsync(context: TurnContext, taskModuleRequest: TaskModuleRequest): Promise<TaskModuleResponse>;
+    protected OnSharePointTaskGetQuickViewAsync(context: TurnContext, taskModuleRequest: TaskModuleRequest): Promise<TaskModuleResponse>;
+    protected OnSharePointTaskSetPropertyPaneConfigurationAsync(context: TurnContext, taskModuleRequest: TaskModuleRequest): Promise<TaskModuleResponse>;
+}
+
 // @public @deprecated (undocumented)
 export class SkillHandler extends ChannelServiceHandler {
     constructor(adapter: BotAdapter, bot: ActivityHandlerBase, conversationIdFactory: SkillConversationIdFactoryBase, credentialProvider: ICredentialProvider, authConfig: AuthenticationConfiguration, channelService?: string);
