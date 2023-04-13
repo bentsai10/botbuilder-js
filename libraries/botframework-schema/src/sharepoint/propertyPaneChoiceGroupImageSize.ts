@@ -5,6 +5,8 @@
  * Sharepoint PropertyPaneChoiceGroupImageSize object
  */
 export class PropertyPaneChoiceGroupImageSize{
+    private width: number;
+    private height: number;
     /**
      * Initializes a new instance of the PropertyPaneChoiceGroupImageSize class
      */
@@ -15,28 +17,28 @@ export class PropertyPaneChoiceGroupImageSize{
     /**
      * Sets the width of the image of type number
      */
-    public set width(width: number){
+    public set Width(width: number){
         this.width = width;
     }
 
     /**
      * Gets the width of the image of type number
      */
-    public get width(): number {
+    public get Width(): number {
         return this.width;
     }
 
     /**
      * Sets the height of the image of type number
      */
-    public set height(height: number){
+    public set Height(height: number){
         this.height = height;
     }
 
     /**
      * Gets the height of the image of type number
      */
-    public get height(): number {
+    public get Height(): number {
         return this.height;
     }
 }

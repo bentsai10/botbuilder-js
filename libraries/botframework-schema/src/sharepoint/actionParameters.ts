@@ -5,6 +5,7 @@
  * Sharepoint action button parameters
  */
 export class ActionParameters {
+    private view: string;
     /**
      * Initializes a new instance of the ActionParameters class
      */
@@ -15,14 +16,14 @@ export class ActionParameters {
     /**
      * Sets view property of type string
      */
-    public set view(view: string){
+    public set View(view: string){
         this.view = view;
     }
 
     /**
      * Gets view property of type string
      */
-    public get view(): string {
+    public get View(): string {
         return this.view;
     }
 }

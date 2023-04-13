@@ -7,6 +7,11 @@ import { PropertyPanePage } from './propertyPanePage';
  * Sharepoint GetPropertyPaneConfiguration response object
  */
 export class GetPropertyPaneConfigurationResponse {
+    private pages: [PropertyPanePage];
+    private currentPage: number;
+    private loadingIndicatorDelayTime: number;
+    private showLoadingIndicator: boolean;
+
     /**
      * Initializes a new instance of the GetPropertyPaneConfigurationResponse class
      */
@@ -17,42 +22,42 @@ export class GetPropertyPaneConfigurationResponse {
     /**
      * Sets pages property of type [PropertyPanePage]
      */
-    public set pages(pages: [PropertyPanePage]){
+    public set Pages(pages: [PropertyPanePage]){
         this.pages = pages;
     }
 
     /**
      * Gets the pages property of type [PropertyPanePage]
      */
-    public get pages(): [PropertyPanePage] {
+    public get Pages(): [PropertyPanePage] {
         return this.pages;
     }
 
     /**
      * Sets the current page property of type number
      */
-    public set currentPage(currentPage: number){
+    public set CurrentPage(currentPage: number){
         this.currentPage = currentPage;
     }
 
     /**
      * Gets current page property of type number
      */
-    public get currentPage(): number {
+    public get CurrentPage(): number {
         return this.currentPage;
     }
 
     /**
      * Sets the loading indicator delay time of type number
      */
-    public set loadingIndicatorDelayTime(loadingIndicatorDelayTime: number){
+    public set LoadingIndicatorDelayTime(loadingIndicatorDelayTime: number){
         this.loadingIndicatorDelayTime = loadingIndicatorDelayTime;
     }
 
     /**
      * Gets the loading indicator delay time of type number
      */
-    public get loadingIndicatorDelayTime(): number {
+    public get LoadingIndicatorDelayTime(): number {
         return this.loadingIndicatorDelayTime;
     }
 
@@ -60,7 +65,7 @@ export class GetPropertyPaneConfigurationResponse {
      * Sets a value indicating whether the loading indicator should be displayed on top
      * of the property pane or not of property of type boolean
      */
-    public set showLoadingIndicator(showLoadingIndicator: boolean){
+    public set ShowLoadingIndicator(showLoadingIndicator: boolean){
         this.showLoadingIndicator = showLoadingIndicator;
     }
 
@@ -68,7 +73,7 @@ export class GetPropertyPaneConfigurationResponse {
      * Gets a value indicating whether the loading indicator should be displayed on top
      * of the property pane or not of property of type boolean
      */
-    public get showLoadingIndicator(): boolean {
+    public get ShowLoadingIndicator(): boolean {
         return this.showLoadingIndicator;
     }
 }

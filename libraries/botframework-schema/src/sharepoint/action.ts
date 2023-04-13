@@ -7,6 +7,8 @@ import { ActionParameters } from './actionParameters';
  * Sharepoint action
  */
 export class Action {
+    private type: string;
+    private parameters: ActionParameters;
     /**
      * Initializes a new instance of the Action class
      */
@@ -17,28 +19,28 @@ export class Action {
     /**
      * Sets type property of type string
      */
-    public set type(type: string){
+    public set Type(type: string){
         this.type = type;
     }
 
     /**
      * Gets type property of type string
      */
-    public get type(): string {
+    public get Type(): string {
         return this.type;
     }
 
     /**
      * Sets parameters property of type ActionParameters
      */
-    public set parameters (parameters: ActionParameters){
+    public set Parameters (parameters: ActionParameters){
         this.parameters = parameters;
     }
 
     /**
      * Gets parameters property of type ActionParameters
      */
-    public get parameters(): ActionParameters {
+    public get Parameters(): ActionParameters {
         return this.parameters; 
     }
 }

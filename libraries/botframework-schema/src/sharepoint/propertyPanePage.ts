@@ -8,6 +8,9 @@ import { PropertyPanePageHeader } from './propertyPanePageHeader';
  * Sharepoint PropertyPanePage object
  */
 export class PropertyPanePage{
+    private displayGroupsAsAccordion: boolean;
+    private groups: [IPropertyPaneGroupOrConditionalGroup];
+    private header: PropertyPanePageHeader;
     /**
      * Initializes a new instance of the PropertyPanePage class
      */
@@ -19,7 +22,7 @@ export class PropertyPanePage{
      * Sets a value indicating whether the groups on the PropertyPanePage 
      * are displayed as accordion or not of type boolean
      */
-    public set displayGroupsAsAccordion(displayGroupsAsAccordion: boolean){
+    public set DisplayGroupsAsAccordion(displayGroupsAsAccordion: boolean){
         this.displayGroupsAsAccordion = displayGroupsAsAccordion;
     }
 
@@ -27,7 +30,7 @@ export class PropertyPanePage{
      * Gets a value indicating whether the groups on the PropertyPanePage 
      * are displayed as accordion or not of type boolean
      */
-    public get displayGroupsAsAccordion(): boolean {
+    public get DisplayGroupsAsAccordion(): boolean {
         return this.displayGroupsAsAccordion;
     }
 
@@ -35,28 +38,28 @@ export class PropertyPanePage{
     /**
      * Sets the groups of type IPropertyPaneGroupOrConditionalGroup
      */
-    public set groups(groups: [IPropertyPaneGroupOrConditionalGroup] ){
+    public set Groups(groups: [IPropertyPaneGroupOrConditionalGroup] ){
         this.groups = groups;
     }
 
     /**
      * Gets the groups of type IPropertyPaneGroupOrConditionalGroup
      */
-    public get groups(): [IPropertyPaneGroupOrConditionalGroup] {
+    public get Groups(): [IPropertyPaneGroupOrConditionalGroup] {
         return this.groups;
     }
 
     /**
      * Sets the header for the property pane of type PropertyPanePageHeader
      */
-    public set header(header: PropertyPanePageHeader ){
+    public set Header(header: PropertyPanePageHeader ){
         this.header = header;
     }
 
     /**
      * Gets the header for the property pane of type PropertyPanePageHeader
      */
-    public get header(): PropertyPanePageHeader {
+    public get Header(): PropertyPanePageHeader {
         return this.header;
     }
 }

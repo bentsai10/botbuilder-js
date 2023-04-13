@@ -7,6 +7,9 @@ import { IPropertyPaneFieldProperties } from './IPropertyPaneFieldProperties';
  * Sharepoint PropertyPaneCheckboxProperties object
  */
 export class PropertyPaneCheckboxProperties implements IPropertyPaneFieldProperties {
+    private text: string
+    private disabled: boolean;
+    private checked: boolean;
     /**
      * Initializes a new instance of the PropertyPaneCheckboxProperties class
      */
@@ -17,42 +20,42 @@ export class PropertyPaneCheckboxProperties implements IPropertyPaneFieldPropert
     /**
      * Sets the label to display next to the checkbox of type string
      */
-    public set text(text: string){
+    public set Text(text: string){
         this.text = text;
     }
 
     /**
      * Gets the label to display next to the checkbox of type string
      */
-    public get text(): string {
+    public get Text(): string {
         return this.text;
     }
 
     /**
      * Sets a value indicating whether this control is enabled or not of type boolean
      */
-    public set disabled(disabled: boolean){
+    public set Disabled(disabled: boolean){
         this.disabled = disabled;
     }
 
     /**
      * Gets a value indicating whether this control is enabled or not of type boolean
      */
-    public get disabled(): boolean {
+    public get Disabled(): boolean {
         return this.disabled;
     }
 
     /**
      * Sets a value indicating whether the property pane checkbox is checked or not of type boolean
      */
-    public set checked(checked: boolean){
+    public set Checked(checked: boolean){
         this.checked = checked;
     }
 
     /**
      * Gets a value indicating whether the property pane checkbox is checked or not of type boolean
      */
-    public get checked(): boolean {
+    public get Checked(): boolean {
         return this.checked;
     }
 }

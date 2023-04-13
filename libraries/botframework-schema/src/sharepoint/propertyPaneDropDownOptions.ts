@@ -14,6 +14,10 @@ export enum DropDownOptionType{
  * Sharepoint PropertyPaneDropDownOption object
  */
 export class PropertyPaneDropDownOption {
+    private index: number;
+    private key: string;
+    private text: string;
+    private type: DropDownOptionType;
     /**
      * Initializes a new instance of the PropertyPaneDropDownOption class
      */
@@ -24,56 +28,56 @@ export class PropertyPaneDropDownOption {
     /**
      * Sets index for this option of type number
      */
-    public set index(index: number){
+    public set Index(index: number){
         this.index = index;
     }
 
     /**
      * Gets index for this option of type number
      */
-    public get index(): number {
+    public get Index(): number {
         return this.index;
     }
 
     /**
      * Sets a key to uniquely identify this option of type string
      */
-    public set key(key: string){
+    public set Key(key: string){
         this.key = key;
     }
 
     /**
      * Gets a key to uniquely identify this option of type string
      */
-    public get key(): string {
+    public get Key(): string {
         return this.key;
     }
 
     /**
      * Sets text to render for this option of type string
      */
-    public set text(text: string){
+    public set Text(text: string){
         this.text = text;
     }
 
     /**
      * Gets text to render for this option of type string
      */
-    public get text(): string {
+    public get Text(): string {
         return this.text;
     }
 
     /**
      * Sets the type of option. If omitted, the default is PropertyPaneDropdownMenuItemType.Normal of type DropDownOptionType
      */
-    public set type(type: DropDownOptionType){
+    public set Type(type: DropDownOptionType){
         this.type = type;
     }
 
     /**
      * Gets the type of option. If omitted, the default is PropertyPaneDropdownMenuItemType.Normal of type DropDownOptionType
      */
-    public get type(): DropDownOptionType {
+    public get Type(): DropDownOptionType {
         return this.type;
     }
 }

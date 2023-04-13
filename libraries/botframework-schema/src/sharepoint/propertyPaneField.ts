@@ -24,6 +24,10 @@ export enum FieldType{
  * Sharepoint PropertyPaneGroupField object
  */
 export class PropertyPaneField{
+    private type: FieldType;
+    private targetProperty: string; 
+    private properties: IPropertyPaneFieldProperties;
+    private shouldFocus: boolean;
     /**
      * Initializes a new instance of the PropertyPaneField class
      */
@@ -34,56 +38,56 @@ export class PropertyPaneField{
     /**
      * Sets the type of field
      */
-    public set type(type: FieldType){
+    public set Type(type: FieldType){
         this.type = type;
     }
 
     /**
      * Gets the type of field
      */
-    public get type(): FieldType {
+    public get Type(): FieldType {
         return this.type;
     }
 
     /**
      * Sets the target property of type string
      */
-    public set targetProperty(targetProperty: string){
+    public set TargetProperty(targetProperty: string){
         this.targetProperty = targetProperty;
     }
 
     /**
      * Gets the target property of type string
      */
-    public get targetProperty(): string {
+    public get TargetProperty(): string {
         return this.targetProperty;
     }
 
     /**
      * Sets the properties property of type IPropertyPaneFieldProperties
      */
-    public set properties(properties: IPropertyPaneFieldProperties){
+    public set Properties(properties: IPropertyPaneFieldProperties){
         this.properties = properties;
     }
 
     /**
      * Gets the properties property of type IPropertyPaneFieldProperties
      */
-    public get properties(): IPropertyPaneFieldProperties {
+    public get Properties(): IPropertyPaneFieldProperties {
         return this.properties;
     }
 
     /**
      * Sets a value indicating whether this control should be focused of type boolean
      */
-     public set shouldFocus(shouldFocus: boolean){
+     public set ShouldFocus(shouldFocus: boolean){
         this.shouldFocus = shouldFocus;
     }
 
     /**
      * Gets a value indicating whether this control should be focused of type boolean
      */
-    public get shouldFocus(): boolean {
+    public get ShouldFocus(): boolean {
         return this.shouldFocus;
     }
 

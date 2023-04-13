@@ -5,6 +5,7 @@
  * Sharepoint PropertyPanePageHeader object
  */
 export class PropertyPanePageHeader{
+    private description: string;
     /**
      * Initializes a new instance of the PropertyPanePageHeader class
      */
@@ -15,14 +16,14 @@ export class PropertyPanePageHeader{
     /**
      * Sets the description of type string
      */
-    public set description(description: string){
+    public set Description(description: string){
         this.description = description;
     }
 
     /**
      * Gets the description of type string
      */
-    public get description(): string {
+    public get Description(): string {
         return this.description;
     }
 }

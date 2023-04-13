@@ -8,6 +8,11 @@ import { PropertyPaneLinkPopupWindowProperties } from './propertyPaneLinkPopupWi
  * Sharepoint PropertyPaneLinkProperties object
  */
 export class PropertyPaneLinkProperties implements IPropertyPaneFieldProperties{
+    private text: string;
+    private target: string;
+    private href: string;
+    private disabled: boolean;
+    private popupWindowProps: PropertyPaneLinkPopupWindowProperties;
     /**
      * Initializes a new instance of the PropertyPaneLinkProperties class
      */
@@ -18,56 +23,56 @@ export class PropertyPaneLinkProperties implements IPropertyPaneFieldProperties{
     /**
      * Sets the label to display next to the checkbox of type string
      */
-    public set text(text: string){
+    public set Text(text: string){
         this.text = text;
     }
 
     /**
      * Gets the label to display next to the checkbox of type string
      */
-    public get text(): string {
+    public get Text(): string {
         return this.text;
     }
 
     /**
      * Sets where to display the linked resource of type string
      */
-    public set target(target: string){
+    public set Target(target: string){
         this.target = target;
     }
 
     /**
      * Gets where to display the linked resource of type string
      */
-    public get target(): string {
+    public get Target(): string {
         return this.target;
     }
 
     /**
      * Sets the location to which the link is targeted to of type string
      */
-    public set href(href: string){
+    public set Href(href: string){
         this.href = href;
     }
 
     /**
      * Gets the location to which the link is targeted to of type string
      */
-    public get href(): string {
+    public get Href(): string {
         return this.href;
     }
 
     /**
      * Sets a value indicating whether this control is enabled or not of type boolean
      */
-    public set disabled(disabled: boolean){
+    public set Disabled(disabled: boolean){
         this.disabled = disabled;
     }
 
     /**
      * Gets a value indicating whether this control is enabled or not of type boolean
      */
-    public get disabled(): boolean {
+    public get Disabled(): boolean {
         return this.disabled;
     }
 
@@ -75,14 +80,14 @@ export class PropertyPaneLinkProperties implements IPropertyPaneFieldProperties{
     /**
      * Sets the title of pop up window of type string
      */
-    public set popupWindowProps(popupWindowProps: PropertyPaneLinkPopupWindowProperties ){
+    public set PopupWindowProps(popupWindowProps: PropertyPaneLinkPopupWindowProperties ){
         this.popupWindowProps = popupWindowProps;
     }
 
     /**
      * Gets the title of pop up window of type string
      */
-    public get popupWindowProps(): PropertyPaneLinkPopupWindowProperties {
+    public get PopupWindowProps(): PropertyPaneLinkPopupWindowProperties {
         return this.popupWindowProps;
     }
 }

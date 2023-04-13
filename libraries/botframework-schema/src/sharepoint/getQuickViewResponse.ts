@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { IQuickViewData } from './IQuickViewData';
-import { QuickViewTemplate } from './quickViewTemplate';
+import { AdaptiveCard } from 'adaptivecards';
 
 /**
  * Sharepoint GetQuickView response object
@@ -32,14 +32,14 @@ export class GetQuickViewResponse {
     /**
      * Sets the quick view template of type QuickViewTemplate
      */
-    public set template(template: QuickViewTemplate){
+    public set template(template: AdaptiveCard){
         this.template = template;
     }
 
     /**
      * Gets the quick view template of type QuickViewTemplate
      */
-    public get template(): QuickViewTemplate {
+    public get template(): AdaptiveCard {
         return this.template;
     }
 

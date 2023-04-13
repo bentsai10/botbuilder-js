@@ -17,6 +17,8 @@ export { TokenExchangeInvokeResponse } from './tokenExchangeInvokeResponse';
 // The Teams schemas was manually added to this library. This file has been updated to export those schemas.
 export * from './teams';
 
+export * from './sharepoint';
+
 /**
  * Attachment View name and size
  */

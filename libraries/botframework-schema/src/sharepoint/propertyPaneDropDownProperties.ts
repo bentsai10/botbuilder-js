@@ -8,6 +8,14 @@ import { PropertyPaneDropDownOption } from './propertyPaneDropDownOptions';
  * Sharepoint PropertyPaneDropDownProperties object
  */
 export class PropertyPaneDropDownProperties implements IPropertyPaneFieldProperties {
+    private ariaLabel: string;
+    private ariaPositionInSet: number;
+    private ariaSetSize: number;
+    private label: string;
+    private disabled: boolean;
+    private errorMessage: string;
+    private selectedKey: string;
+    private options: [PropertyPaneDropDownOption];
     /**
      * Initializes a new instance of the PropertyPaneDropDownProperties class
      */
@@ -18,14 +26,14 @@ export class PropertyPaneDropDownProperties implements IPropertyPaneFieldPropert
     /**
      * Sets the aria label of type string
      */
-    public set ariaLabel(ariaLabel: string){
+    public set AriaLabel(ariaLabel: string){
         this.ariaLabel = ariaLabel;
     }
 
     /**
      * Gets the aria label of type string
      */
-    public get ariaLabel(): string {
+    public get AriaLabel(): string {
         return this.ariaLabel;
     }
 
@@ -33,7 +41,7 @@ export class PropertyPaneDropDownProperties implements IPropertyPaneFieldPropert
      * Sets an element's number or position in the current set of controls.
      * Maps to native aria-posinset attribute. It starts from 1 of type number
      */
-    public set ariaPositionInSet(ariaPositionInSet: number){
+    public set AriaPositionInSet(ariaPositionInSet: number){
         this.ariaPositionInSet = ariaPositionInSet;
     }
 
@@ -41,91 +49,91 @@ export class PropertyPaneDropDownProperties implements IPropertyPaneFieldPropert
      * Gets an element's number or position in the current set of controls.
      * Maps to native aria-posinset attribute. It starts from 1 of type number
      */
-    public get ariaPositionInSet(): number {
+    public get AriaPositionInSet(): number {
         return this.ariaPositionInSet;
     }
 
     /**
      * Sets the number of items in the current set of controls. Maps to native aria-setsize attribute of type number
      */
-    public set ariaSetSize(ariaSetSize: number){
+    public set AriaSetSize(ariaSetSize: number){
         this.ariaSetSize = ariaSetSize;
     }
 
     /**
      * Gets the number of items in the current set of controls. Maps to native aria-setsize attribute of type number
      */
-    public get ariaSetSize(): number {
-        return this.ariaPositionInSet;
+    public get AriaSetSize(): number {
+        return this.ariaSetSize;
     }
 
     /**
      * Sets the label of type string
      */
-    public set label(label: string){
+    public set Label(label: string){
         this.label = label;
     }
 
     /**
      * Gets the label of type string
      */
-    public get label(): string {
+    public get Label(): string {
         return this.label;
     }
 
     /**
      * Sets a value indicating whether this control is enabled or not of type boolean
      */
-    public set disabled(disabled: boolean){
+    public set Disabled(disabled: boolean){
         this.disabled = disabled;
     }
 
     /**
      * Gets a value indicating whether this control is enabled or not of type boolean
      */
-    public get disabled(): boolean {
+    public get Disabled(): boolean {
         return this.disabled;
     }
 
     /**
      * Sets the error message of type string
      */
-    public set errorMessage(errorMessage: string){
+    public set ErrorMessage(errorMessage: string){
         this.errorMessage = errorMessage;
     }
 
     /**
      * Gets the error message of type string
      */
-    public get errorMessage(): string {
+    public get ErrorMessage(): string {
         return this.errorMessage;
     }
 
     /**
      * Sets the key of the initially selected option of type string
      */
-    public set selectedKey(selectedKey: string){
+    public set SelectedKey(selectedKey: string){
         this.selectedKey = selectedKey;
     }
 
     /**
      * Gets the key of the initially selected option of type string
      */
-    public get selectedKey(): string {
+    public get SelectedKey(): string {
         return this.selectedKey;
     }
 
     /**
      * Sets the collection of options for this Dropdown of type [PropertyPaneDropDownOption]
      */
-    public set options(options: [PropertyPaneDropDownOption]){
+    public set Options(options: [PropertyPaneDropDownOption]){
         this.options = options;
     }
 
     /**
      * Gets the collection of options for this Dropdown of type [PropertyPaneDropDownOption]
      */
-    public get options(): [PropertyPaneDropDownOption] {
+    public get Options(): [PropertyPaneDropDownOption] {
         return this.options;
     }
 }

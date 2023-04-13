@@ -7,6 +7,8 @@ import { Action } from './action';
  * Sharepoint action button
  */
 export class ActionButton {
+    private title: string;
+    private action: Action;
     /**
      * Initializes a new instance of the ActionButton class
      */
@@ -17,28 +19,28 @@ export class ActionButton {
     /**
      * Sets title property of type string
      */
-    public set title(title: string){
+    public set Title(title: string){
         this.title = title;
     }
 
     /**
      * Gets title property of type string
      */
-    public get title(): string {
+    public get Title(): string {
         return this.title;
     }
 
     /**
      * Sets parameters property of type Action
      */
-    public set action (action: Action){
+    public set Action (action: Action){
         this.action = action;
     }
 
     /**
      * Gets parameters property of type Action
      */
-    public get action(): Action {
+    public get Action(): Action {
         return this.action; 
     }
 }
